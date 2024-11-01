@@ -1,0 +1,13 @@
+Giải bài tập :
+- gộp hàng thành 1 thì dùng  rowspan = "số ô muốn gộp" => gộp với ô ngay dưới nó và xoá cái ô dưới nó để nó có chỗ nếu không thì sẽ đẩy ô đó ra và bị thành dư ô trong bảng
+- gộp cột thì dùng colspan =  "số ô muốn gộp" 
+Học css:
+- thẻ style và link nằm đâu cũng đc
+- độ ưu tiên trong css :
+inline
+css style(từ trên xuống)
+-id và clss:
+id --> 1 lần duy nhất
+class
+
+====> về tìm hiểu thẻ div và class, id cái nào đc ưu tiên hơn
