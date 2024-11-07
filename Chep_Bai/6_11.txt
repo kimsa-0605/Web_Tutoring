@@ -1,0 +1,14 @@
+Flexbox
+----flex-direction: row
+justify-content: ngang
+align-items: dọc
+
+----flex-direction: column
+justify-content: dọc
+align-items: ngang
+
+justify-content: space-between; ==> khoảng cách giữa các item bằng nhau và không có khoảng cách ở 2 lề
+justify-content: space-evenly ==> khoảng cách giữa các item bằng nhau và  có khoảng cách ở 2 lề
+justify-content: space-around ==> khoảng cách 2 bên  giữa các item bằng nhau 
+
+
