@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+   p {
+      border: 2px solid blue;
+      width: 200px;
+   }
+   .normal {
+      line-break: normal;
+   }
+   .loose {
+      line-break: loose;
+   }
+   .strict {
+      line-break: strict;
+   }
+   .auto {
+      line-break: auto;
+   }
+   .anywhere {
+      line-break: anywhere;
+   }
+</style>
+</head>
+<body>
+    <div>
+        <h3>Ví dụ về thuộc tính line-break với các giá trị khác nhau</h3>
+
+        <p style="line-break: auto; border: 1px solid #000; padding: 10px;">
+            <strong>Auto</strong>: Đây là một sa bản rất dài để thử nghiệm thuộc tính line-break với giá trị auto.Trình duyệt sẽ tự động quyết định cách ngắt dòng theo quy tắc của ngôn ngữ. Khi hiển thị trên màn hình, sa bản này có thể bị ngắt tại các khoảng trắng, dấu câu hoặc các điểm ngắt dòng hợp lý khácccccccccccccccccccccccccccccccccccccccccccccc.
+        </p>
+
+        <p style="line-break: loose; border: 1px solid #000; padding: 10px;">
+            <strong>Loose</strong>: Đây là một sa bản rất dài để thử nghiệm thuộc tính line-break với giá trị loose. Trình duyệt sẽ ngắt dòng theo cách ít nghiêm ngặt nhất, cho phép các từ dài hoặc các ký tự được ngắt tại nhiều vị trí khác nhau để tạo ra không gian thoải mái hơnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn.
+        </p>
+
+        <p style="line-break: normal; border: 1px solid #000; padding: 10px;">
+            <strong>Normal</strong>: Đây là một sa bản rất dài để thử nghiệm thuộc tính line-break với giá trị normal. Trình duyệt sẽ áp dụng các quy tắc ngắt dòng thông dụng nhất, giữ cho các dòng không bị ngắt ở những vị trí khó đọcccccccccccccccccccccccccccccccccccccc.
+        </p>
+
+        <p style="line-break: strict; border: 1px solid #000; padding: 10px;">
+            <strong>Strict</strong>: Đây là một sa bản rất dài để thử nghiệm thuộc tính line-break với giá trị strict. Trình duyệt sẽ chỉ ngắt dòng tại các khoảng trắng hoặc giữa các từ, không ngắt giữa các ký tự, đảm bảo văn bản được ngắt dòng tại những điểm chính xác nhất.
+        </p>
+
+        <p style="line-break: anywhere; border: 1px solid #000; padding: 10px;">
+            <strong>Anywhere</strong>: Đây là một sa bản rất dài để thử nghiệm thuộc tính line-break với giá trịanywhere. Trình duyệt có thể ngắt dòng ở bất kỳ đâu, kể cả giữa các ký tự, để phù hợp với chiều rộng của container. Điều này giúp tối ưu hóa việc hiển thị văn bản trên các màn hình hẹp.
+        </p>
+
+        <p style="line-break: initial; border: 1px solid #000; padding: 10px;">
+            <strong>Initial</strong>: Đây là một sa bản rất dài để thử nghiệm thuộc tính line-break với giá trị initial. Thuộc tính này sẽ trở về trạng thái mặc định của trình duyệt, tương đương với giá trị auto.
+        </p>
+
+        <p style="line-break: inherit; border: 1px solid #000; padding: 10px;">
+            <strong>Inherit</strong>: Đây là một sa bản rất dài để thử nghiệm thuộc tính line-break với giá trị
+            inherit. Thuộc tính này sẽ kế thừa giá trị line-break từ phần tử cha, giúp các phần tử con có cách ngắt dòng
+            giống như phần tử cha.
+        </p>
+    </div>
+
+</body>
+</html>

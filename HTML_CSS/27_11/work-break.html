@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container {
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .normal {
+    word-break: normal; /* Mặc định */
+    height: 10em;
+  }
+
+  .keep-all {
+    word-break: keep-all; /* Giữ nguyên từ, chỉ ngắt khi có gạch nối */
+  }
+
+  .break-all {
+    word-break: break-all; /* Ngắt từ ở bất kỳ vị trí nào khi hết dòng */
+  }
+
+  .break-word {
+    word-break: break-word; /* Ngắt từ tại điểm thích hợp */
+  }
+</style>
+</head>
+<body>
+
+<h3>Word Break Examples</h3>
+
+<div class="container normal">
+  <strong>Normal:</strong> ThisIsAnExtremelyLongWordThatWillOverflowTheBox. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia beatae dolor corrupti similique, voluptatibus suscipit quos placeat provident. Ipsam dignissimos itaque at quod dolores amet odio ducimus autem officiis voluptas.
+</div>
+
+<div class="container keep-all">
+  <strong>Keep-All:</strong> ThisIsAnExtremelyLongWord-With-HyphensThatWillOverflowTheBox.
+</div>
+
+<div class="container break-all">
+  <strong>Break-All: Đây là một đoạn văn bản rất dài để thử nghiệm thuộc tính line-break với giá trị auto.Trình duyệt sẽ tự động quyết định cách ngắt dòng theo quy tắc của ngôn ngữ. Khi hiển thị trên màn hình, đoạn văn bản này có thể bị ngắt tại các khoảng trắng, dấu câu hoặc các điểm ngắt dòng hợp lý khácccccccccccccccccccccccccccccccccccccccccccccc.</strong>
+  </div>
+
+  <div class="container break-word">
+    <strong>Break-Word: Đây là một đoạn văn bản rất dài để thử nghiệm thuộc tính line-break với giá trị auto.Trình duyệt sẽ tự động quyết định cách ngắt dòng theo quy tắc của ngôn ngữ. Khi hiển thị trên màn hình, đoạn văn bản này có thể bị ngắt tại các khoảng trắng, dấu câu hoặc các điểm ngắt dòng hợp lý khácccccccccccccccccccccccccccccccccccccccccccccc.</strong>
+    </div>

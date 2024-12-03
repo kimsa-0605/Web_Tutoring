@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container {
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .normal {
+    word-wrap: normal; /* Giá trị mặc định */
+  }
+
+  .break-word {
+    word-wrap: break-word; /* Ngắt từ khi cần */
+  }
+</style>
+</head>
+<body>
+
+<h3>Word Wrap Examples</h3>
+
+<!-- Normal behavior -->
+<div class="container normal">
+  Normal: ThisIsAnExtremelyLongWord ThatWillNotBreakAndWillOverflowTheBox.
+</div>
+
+<!-- Break-word behavior -->
+<div class="container break-word">
+  <strong>Break-Word: Đây là một đoạn văn bản rất dài để thử nghiệm thuộc tính line-break với giá trị auto.Trình duyệt sẽ tự động quyết định cách ngắt dòng theo quy tắc của ngôn ngữ. Khi hiển thị trên màn hình, đoạn văn bản này có thể bị ngắt tại các khoảng trắng, dấu câu hoặc các điểm ngắt dòng hợp lý khácccccccccccccccccccccccccccccccccccccccccccccc</strong>
+</div>
+
+</body>
+</html>

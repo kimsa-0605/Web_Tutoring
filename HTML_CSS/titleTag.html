@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Overview of CSS</title>
+    <style>
+        /* Định dạng cho tiêu đề */
+        h1 {
+            color: blue;
+            font-size: 2em;
+        }
+
+        /* Định dạng cho đoạn văn có đường viền */
+        .bordered-text {
+            border: 2px solid red;
+            padding: 5px;
+        }
+
+        /* Định dạng chung cho liên kết */
+        a {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>An Overview of CSS</h1>
+    <p>These pages are intended to be explored in the developer console of your browser. You should also install the <a href="#">Web Developer</a> plugin from Chris Pederick to play with CSS.</p>
+    
+    <p>We can use the <code>style=</code> attribute on HTML tags to apply various styles to text and blocks of text.</p>
+    
+    <p>The "Cascading" in CSS means that the closest style setting (monospace) "wins" over a style setting (arial) that is "further away".</p>
+    
+    <p class="bordered-text">We can put a border around a block of text. You probably want a CSS cheat sheet handy or use Google to search to find CSS values.</p>
+    
+    <p>While the <code>style</code> attribute <em>works</em>, it leads to overly verbose HTML so it is more typical to write CSS ⇒ <a href="#">style rules</a> to apply styles to many tags at once.</p>
+    
+    <footer>
+        <p>This material is part of the <a href="#">Web Applications for Everybody (WA4E)</a> website and is copyright Creative Commons Attribution. You are welcome to reuse and remix these examples for your own use with attribution. You can download a ZIP file of the <a href="#">source code</a> for these examples.</p>
+    </footer>
+</body>
+</html>

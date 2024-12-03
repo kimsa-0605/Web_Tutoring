@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container {
+    width: 200px; /* Đặt chiều rộng cho vùng chứa */
+    border: 1px solid black; /* Viền để dễ quan sát */
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+
+  .clip {
+    white-space: nowrap; /* Ngăn xuống dòng */
+    overflow: hidden; 
+    text-overflow: clip; /* Cắt phần văn bản tràn (mặc định) */
+  }
+
+  .ellipsis {
+    width: 300px;
+    background-color: aqua;
+    display: -webkit-box; /* Sử dụng box flex để kiểm soát nhiều dòng */
+    -webkit-line-clamp: 2; /* Giới hạn số dòng (3 dòng trong ví dụ này) */
+    -webkit-box-orient: vertical; /* Hiển thị nội dung theo chiều dọc */
+    overflow: hidden; /* Ẩn phần tràn */
+    text-overflow: ellipsis; /* Thêm dấu "..." cho phần tràn */
+    height: 4em; /* lấy kích thước bằng font chữ trong div đó cỡ bao nhiêu lần */
+    height: 4rem; /* lấy kích thước bằng font chữ thẻ ngoài cùng là html */
+    line-height: 2;
+    word-wrap: break-word;
+  }
+
+  .visible {
+    white-space: nowrap; /* Ngăn xuống dòng */
+    overflow: visible; /* Hiển thị phần tràn (không áp dụng text-overflow) */
+  }
+</style>
+</head>
+<body>
+
+<h3>Text Overflow Examples</h3>
+
+<!-- Clip -->
+<div class="container clip">
+  <strong>Clip:</strong> This is a very long text that will be clipped if it overflows the container.
+</div>
+
+<!-- Ellipsis -->
+<div class="container ellipsis">
+ beeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee truncated with an ellipsis if it overflows the container Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae, autem veritatis corrupti modi dolorem pariatur 
+eius aliquam itaque molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni at accusantium vel ipsam veritatis beatae consequuntur facere iste sed, aspernatur quae laborum ullam culpa blanditiis deserunt aliquid? Mollitia, neque.
+</div>
+
+<!-- Visible -->
+<div class="container visible">
+  <strong>Visible:</strong> This is a very long text that will overflow and remain visible outside the container.
+</div>
+
+</body>
+</html>

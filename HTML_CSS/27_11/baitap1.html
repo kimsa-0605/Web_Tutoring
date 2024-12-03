@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title-body-content {
+            font-size: 1em; 
+            line-height: 1em;
+        } 
+
+        /* Có kích thước chênh là 2.44 (kích thước * (1.22 + 1.22) -> 2 dòng nếu muốn nhiều dòng hơn thì cọng vào) */
+
+        .title-body-content::first-letter { 
+            font-size: 3em; 
+            line-height: 1em; 
+            float:left; 
+        }
+
+        .container {
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 800px;
+        }
+
+        .header-title {
+            text-align: center;
+        }
+        .first-title {
+            font-weight: bold;
+        }
+        .main-body-content {
+            padding-left: 0px;
+        }
+        .main-body-content li{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-title">
+            <h1>A. Đầu</h1>
+            <h3>(Nhận xét sự kiện)</h3>
+        </div>
+        <div class="body">
+            <div class="body-content">
+                <p class="title-body-content">&nbsp;&nbsp;Gorem ipsum dolor sit amet consectetur adipisicing elit. lorem
+                    Necessitatibus, modi.Lorem ipsum dolor, sit amet consectetur  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis nam iusto nulla hic in accusamus adipisci aut cupiditate sit, dignissimos quos voluptatum architecto quis et eaque officiis soluta consectetur assumenda Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam corporis unde rerum molestias quasi officiis saepe corrupti velit beatae l .mod:</p>
+                <ol class="main-body-content">
+                    <li>
+                        <p class="first-title">Lorem?</p>
+                        <p>Lorem ipsum dlior sit amet consectetur adipisicing elit. Quasi consequuntur amet reprehenderit architecto esse, animi odit totam dlioremque repellat maxime.</p>
+                    </li>
+                    <li>
+                        <p class="first-title">Lorem?</p>
+                        <p>Lorem ipsum dlior sit amet consectetur adipisicing elit. Quasi consequuntur amet reprehenderit architecto esse, animi odit totam dlioremque repellat maxime.</p>
+                    </li>
+                    <li>
+                        <p class="first-title">Lorem?</p>
+                        <p>Lorem ipsum dlior sit amet consectetur adipisicing elit. Quasi consequuntur amet reprehenderit architecto esse, animi odit totam dlioremque repellat maxime.</p>
+                    </li>
+                    <li>
+                        <p class="first-title">Lorem?</p>
+                        <p>Lorem ipsum dlior sit amet consectetur adipisicing elit. Quasi consequuntur amet reprehenderit architecto esse, animi odit totam dlioremque repellat maxime.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
