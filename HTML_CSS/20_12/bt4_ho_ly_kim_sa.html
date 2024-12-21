@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Thêm vào trong <head> của file HTML -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 400px;
+            background-image: url('https://c.stocksy.com/a/5vY000/z9/134235.jpg');
+        }
+        .image .read, .image .join {
+            background-color: rgb(30, 194, 194);
+            padding: 10px;
+            margin-bottom: 60px;
+            color: white;
+            width: 120px;
+            text-align: center;
+        }
+        .image .read {
+            border-radius: 25px 0px 0px 25px;
+            border-right: 1px solid white;
+        }
+        .image .join {
+            border-radius: 0px 25px 25px 0px; 
+        }
+        .blog-infor {
+            background-color: rgba(8, 248, 248, 0.167);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .price, .title {
+            font-size: 23px;
+            font-weight: bold;
+        }
+        .star i {
+            color: rgb(26, 202, 202);
+        }
+        .infor-bottom {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .icon-text {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <span class="read">Read more</span>
+            <span class="join">Join Now</span>
+        </div>
+        <div class="blog-infor">
+                <span class="price">$149.00</span>
+                <div class="star" style="margin-top: 10px;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(123)</span>
+            </div>
+            <p class="title">
+                Web Design & Development Course for Beginners
+            </p>
+            <div class="infor-bottom">
+                <div class="icon-text">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <span>John Doe</span>
+                </div>
+                <div class="icon-text">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>1.49 Hrs</span>
+                </div>
+                <div class="icon-text">
+                    <i class="fa-solid fa-user"></i>
+                    <span>30 Students</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

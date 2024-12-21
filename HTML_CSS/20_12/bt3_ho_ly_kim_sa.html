@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 1000px;
+            padding: 25px;
+            gap: 10px;
+            background-color: black;
+            box-sizing: border-box;
+        }
+        .form {
+            border-radius: 15px;
+            height: 300px;
+            width: 600px;
+            padding: 30px;
+            background-color: white;
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 15px;
+            height: 350px;
+            width: 200px;
+            padding: 30px;
+            background-color: rgb(177, 6, 6);
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .title {
+            font-weight: bold;
+            border-bottom: 1px solid lightgray;
+            padding-bottom: 20px;
+            margin: 0px;
+        }
+        .input {
+            height: 250px;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .input_type {
+            display: flex;
+            justify-content: space-between;
+        }
+        .input_type input {
+            padding: 10px;
+            background-color: rgba(211, 211, 211, 0.5);
+            border: none;
+            border-radius: 50px;
+        }
+        .textarea_type textarea {
+            width: 580px;
+            height: 100px;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            background-color: rgba(211, 211, 211, 0.5);
+        }
+        .submitBtn {
+            width: 200px;
+            padding: 10px;
+            border-radius: 50px;
+            background-color: rgb(177, 6, 6);
+            color: white;
+            border: none;
+        }   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <p class="title">LET'S GET IN TOUCH</p>
+            <form class="input">
+                <div class="input_type">
+                    <input type="text" placeholder="YOURNAME...*">
+                    <input type="text" placeholder="YOUREMIAL...">
+                    <input type="text" placeholder="SUBJECT...*">
+                </div>
+                <div class="textarea_type">
+                    <textarea name="" id="" placeholder="YOUR MESSAGE..."></textarea>
+                </div>
+                <button class="submitBtn">SEND MESSAGE NOW</button>
+            </form>
+        </div>
+        <div class="contact">
+            <div class="phone">
+                <p>Phone number</p>
+                <p>012-345-6789</p>
+            </div>
+            <div class="email">
+                <p>Email address</p>
+                <p>kimsa@gmail.com.edu</p>
+            </div>
+            <div class="address">
+                <p>Street Address</p>
+                <p>99 THHT - PM, Son Tra Da Nang</p>
+            </div>
+            <div class="websiteUrl">
+                <p>Website URL</p>
+                <p>www.meeting.edu</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
